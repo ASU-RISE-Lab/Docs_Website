@@ -99,7 +99,7 @@ IDK how to insert videos yet.
 
 Links are added via `[text](web-url)`.
 
-## Creating Link on [Tutorials](..)
+## Creating Link from [Tutorials](..)
 
 Before deploying your new page, you need to make it accessible from the [home page](../..).
 To do this, add the following to `PX4-Autopilot/docs/index_tutorials.md`:
@@ -111,6 +111,17 @@ For the [Example Page](../example_page/example_page.md), it would be
 ```
 - [Example Page](example_page/example_page.md)
 ```
+
+## Local Testing
+
+To locally test your new content, run
+```
+bundle exec jekyll serve
+```
+in your terminal. Launch a browser and go to [your locally hosted version of the website](http://127.0.0.1:4000/PX4-Autopilot/).
+
+This way, you can quickly make changes to your page, check for broken links, and make sure everything is working
+properly before making your page public.
 
 ## Publishing Your New Content
 
