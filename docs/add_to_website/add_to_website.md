@@ -4,6 +4,7 @@ layout: tutorial
 toc: true
 exclude: true
 permalink: /tutorials/add_to_website
+usemathjax: true
 ---
 
 ## Get the Source Code
@@ -69,6 +70,7 @@ layout: tutorial
 toc: true
 exclude: true
 permalink: /tutorials/<FOLDER NAME>
+usemathjax: <true/false>
 ---
 ```
 
@@ -78,6 +80,7 @@ permalink: /tutorials/<FOLDER NAME>
 - `toc` - controls whether there is a table of contents or not. It doesn't seem to be doing anything right now.
 - `exclude` - SET TO TRUE. This excludes the page from having a link in the header bar of every page.
 - `permalink` - modifies the link that goes in the URL bar of the browser. 
+- `usemathjax` - set to `true` if you want to embed $$\LaTeX$$ equations like $$e=mc^2$$. Note that you will need to use double dollar signs `$$<EQUATION>$$` for equations to show.
 
 ### Adding Actual Content
 
