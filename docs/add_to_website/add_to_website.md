@@ -104,7 +104,7 @@ Links are added via `[text](web-url)`.
 
 ## Creating Link from [Tutorials](..)
 
-Before deploying your new page, you need to make it accessible from the [home page](../..).
+Before deploying your new page, you need to make it accessible from the [home page](../../index.markdown).
 To do this, add the following to `PX4-Autopilot/docs/index_tutorials.md`:
 ```
 - [<PAGE_TITLE>](<PAGE_FOLDER>/<PAGE_FILE>)
