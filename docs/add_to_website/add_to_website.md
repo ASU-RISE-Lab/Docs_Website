@@ -99,6 +99,19 @@ IDK how to insert videos yet.
 
 Links are added via `[text](web-url)`.
 
+## Creating Link on [Tutorials](..)
+
+Before deploying your new page, you need to make it accessible from the [home page](../..).
+To do this, add the following to `PX4-Autopilot/docs/index_tutorials.md`:
+```
+- [<PAGE_TITLE>](<PAGE_FOLDER>/<PAGE_FILE>)
+```
+
+For the [Example Page](../example_page/example_page.md), it would be
+```
+- [Example Page](example_page/example_page.md)
+```
+
 ## Publishing Your New Content
 
 For your new stuff to show up on the internet, you have to push the page you wrote to the repository `gh-pages` branch.
