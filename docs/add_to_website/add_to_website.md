@@ -5,7 +5,6 @@ toc: true
 exclude: true
 permalink: /tutorials/add_to_website
 usemathjax: true
-use_math: true
 ---
 
 ## Get the Source Code
