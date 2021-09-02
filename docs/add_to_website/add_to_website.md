@@ -16,6 +16,9 @@ Clone the `gh-pages` from `PX4-Autopilot` using
 git clone --branch gh-pages https://github.com/ASU-RISE-Lab/PX4-Autopilot.git
 ```
 
+It is highly recommended that you clone this branch separately from your actual PX4 firmware to keep shenanigans
+with submodules and irrelevant folders from messing with the repository.
+
 ## Required Software
 
 ### Ruby
@@ -25,6 +28,8 @@ Follow the instructions [here](https://www.ruby-lang.org/en/documentation/instal
 ### Bundler
 
 Follow the instructions [here](https://bundler.io)
+
+The command is likely `sudo gem install bundler`. Don't worry about specifying dependencies yet.
 
 ## Adding a New Page/Tutorial
 
