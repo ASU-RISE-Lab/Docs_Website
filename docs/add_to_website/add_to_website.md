@@ -18,6 +18,8 @@ git clone https://github.com/ASU-RISE-Lab/Docs_Website.git
 
 ## Required Software
 
+The following software is needed to locally test your changes.
+
 ### Ruby
 
 Follow the instructions [here](https://www.ruby-lang.org/en/documentation/installation/).
