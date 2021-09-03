@@ -10,20 +10,23 @@ usemathjax: true
 ## Get the Source Code
 
 Before adding any new content to this website, you need to get the source code. 
-Clone the `gh-pages` from `PX4-Autopilot` using
+Clone the 'Docs_Website' repository using
 
 ```
-git clone --branch gh-pages https://github.com/ASU-RISE-Lab/PX4-Autopilot.git
+git clone https://github.com/ASU-RISE-Lab/Docs_Website.git
 ```
-
-It is highly recommended that you clone this branch separately from your actual PX4 firmware to keep shenanigans
-with submodules and irrelevant folders from messing with the repository.
 
 ## Required Software
 
 ### Ruby
 
 Follow the instructions [here](https://www.ruby-lang.org/en/documentation/installation/).
+
+If you don't have ruby already installed, you probably need to run something like
+
+```
+sudo apt install ruby-full
+```
 
 ### Bundler
 
@@ -44,7 +47,7 @@ sudo gem install jekyll
 Below is a subset of the directory tree:
 
 ```
-└── PX4-Autopilot
+└── Docs_Website
     ├── assets
     └── docs
         ├── add_to_website
@@ -54,15 +57,15 @@ Below is a subset of the directory tree:
 
 If you are adding a new tutorial about something, create a new folder under `docs`
 and then the name of your new web page inside that. For this tutorial, the source file
-is `/PX4-Autopilot/docs/add_to_website/add_to_website.md` where the new folder is `add_to_website` and the new file is
+is `/Docs_Website/docs/add_to_website/add_to_website.md` where the new folder is `add_to_website` and the new file is
 inside that folder and is called `add_to_website.md`.
 
 For this tutorial, I will create an [example page](../example_page/example_page.md). 
-The new folder is `PX4-Autopilor/docs/example_page`, and the new file is `example_page.md`.
+The new folder is `Docs_Website/docs/example_page`, and the new file is `example_page.md`.
 The directory tree will now include this:
 ```
 .
-└── PX4-Autopilot
+└── Docs_Website
     ├── assets
     └── docs
         ├── add_to_website
@@ -121,7 +124,7 @@ Links are added via `[text](web-url)`.
 ## Creating Link from [Tutorials](..)
 
 Before deploying your new page, you need to make it accessible from the [tutorial page](../index_tutorials.md).
-To do this, add the following to `PX4-Autopilot/docs/index_tutorials.md`:
+To do this, add the following to `Docs_Website/docs/index_tutorials.md`:
 ```
 - [<PAGE_TITLE>](<PAGE_FOLDER>/<PAGE_FILE>)
 ```
@@ -163,4 +166,3 @@ git push
 
 Wait for a few minutes, then you should see the changes on the website.
 
-Please only push to `gh-pages`. Don't overwrite other branches, they contain valuable code.
