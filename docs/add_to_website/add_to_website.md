@@ -31,6 +31,12 @@ Follow the instructions [here](https://bundler.io)
 
 The command is likely `sudo gem install bundler`. Don't worry about specifying dependencies yet.
 
+### Jekyll
+
+```
+sudo gem install jekyll
+```
+
 ## Adding a New Page/Tutorial
 
 ### New Folder and Markdown File
@@ -48,7 +54,8 @@ Below is a subset of the directory tree:
 
 If you are adding a new tutorial about something, create a new folder under `docs`
 and then the name of your new web page inside that. For this tutorial, the source file
-is `/PX4-Autopilot/docs/add_to_website/add_to_website.md`.
+is `/PX4-Autopilot/docs/add_to_website/add_to_website.md` where the new folder is `add_to_website` and the new file is
+inside that folder and is called `add_to_website.md`.
 
 For this tutorial, I will create an [example page](../example_page/example_page.md). 
 The new folder is `PX4-Autopilor/docs/example_page`, and the new file is `example_page.md`.
@@ -66,6 +73,8 @@ The directory tree will now include this:
 ```
 
 ### Front Matter
+
+Open your `.md` file and add the front matter before anything else.
 
 The front matter of your new page (the stuff that goes on top of the new file) should be as follows: 
 ```
@@ -89,7 +98,9 @@ usemathjax: <true/false>
 
 ### Adding Actual Content
 
-Type things in here.
+Normal text can be typed into your `.md` file below the front matter.
+
+Here's a handy cheatsheet for markdown language: [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 Inline code is done by surrounding your text with single backticks `` `<CODE>` ``.
 
@@ -109,7 +120,7 @@ Links are added via `[text](web-url)`.
 
 ## Creating Link from [Tutorials](..)
 
-Before deploying your new page, you need to make it accessible from the [home page](../../index.markdown).
+Before deploying your new page, you need to make it accessible from the [tutorial page](../index_tutorials.md).
 To do this, add the following to `PX4-Autopilot/docs/index_tutorials.md`:
 ```
 - [<PAGE_TITLE>](<PAGE_FOLDER>/<PAGE_FILE>)
@@ -126,7 +137,16 @@ To locally test your new content, run
 ```
 bundle exec jekyll serve
 ```
-in your terminal. Launch a browser and go to [your locally hosted version of the website](http://127.0.0.1:4000/PX4-Autopilot/).
+in your terminal from the root directory of the repository. 
+Launch a browser and go to [your locally hosted version of the website](http://127.0.0.1:4000/PX4-Autopilot/).
+
+You may need to run `bundle install` and enter your password a few times.
+
+You may need to run `sudo apt install racc` and then `bundle install`.
+
+You may need to run `sudo apt install ruby-dev` and then `bundle install`.
+
+You may need to run the above commands
 
 This way, you can quickly make changes to your page, check for broken links, and make sure everything is working
 properly before making your page public.
