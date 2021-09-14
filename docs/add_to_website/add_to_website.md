@@ -5,6 +5,7 @@ toc: true
 exclude: true
 permalink: /tutorials/add_to_website
 usemathjax: true
+author: JJ Garrard
 ---
 
 ## Get the Source Code
