@@ -63,7 +63,7 @@ The above equation is the low-pass filter that I will implement in software. Bef
 
 Below is the MATLAB code that plots the input and output of the LPF. 
 
-```
+```matlab
 T = 0.01;   % Time between samples in s
 w = 10*2*pi;     % Cutoff frequency in rad/s
 z = 1;      % Damping ratio
