@@ -144,7 +144,7 @@ To locally test your new content, run
 bundle exec jekyll serve
 ```
 in your terminal from the root directory of the repository. 
-Launch a browser and go to [your locally hosted version of the website](http://127.0.0.1:4000/PX4-Autopilot/).
+Launch a browser and go to [your locally hosted version of the website](http://127.0.0.1:4000/Docs_Website/).
 
 You may need to run `bundle install` and enter your password a few times.
 
